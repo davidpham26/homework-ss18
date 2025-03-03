@@ -14,9 +14,9 @@ if (operator === "+") {
 } else if (operator === "*") {
     result = a * b;
 } else if (operator === "/") {
-    result = b !== 0 ? a / b : "Không thể chia cho 0";
+    result = b === 0 ? a / b : "Không thể chia cho 0";
 } else if (operator === "%") {
-    result = b !== 0 ? a % b : "Không thể chia cho 0";
+    result = b === 0 ? a % b : "Không thể chia cho 0";
 } else {
     result = "Phép toán không hợp lệ";
 }
